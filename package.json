@@ -1,0 +1,29 @@
+{
+  "name": "tinder-backend",
+  "version": "1.0.0",
+  "description": "tinder backend with clever programmer.com",
+  "main": "source/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node source/main.js",
+    "devStart": "nodemon source/main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/graceDev1/tinder-backend.git"
+  },
+  "author": "grace birindwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/graceDev1/tinder-backend/issues"
+  },
+  "homepage": "https://github.com/graceDev1/tinder-backend#readme",
+  "dependencies": {
+    "config": "^3.3.3",
+    "express": "^4.17.1",
+    "mongoose": "^5.11.8"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

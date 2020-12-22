@@ -1,3 +1,4 @@
 {
-    "mongoUri":"mongodb://cleverCoder:firene12#@mern-shard-00-00.v8ddv.mongodb.net:27017,mern-shard-00-01.v8ddv.mongodb.net:27017,mern-shard-00-02.v8ddv.mongodb.net:27017/tinderClone?ssl=true&replicaSet=atlas-ikc4mx-shard-0&authSource=admin&retryWrites=true&w=majority"
+    "mongoUri":"mongodb+srv://psprogrammer:fire123$@cluster0.pvvby.mongodb.net/<dbname>?retryWrites=true&w=majority",
+    "localUri":"mongodb://127.0.0.1:27017/tinder"
 }

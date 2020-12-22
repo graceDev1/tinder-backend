@@ -1,4 +1,4 @@
-import mongoose from '../database/index';
+const mongoose = require('../database/index');
 
 const PersonSchema = mongoose.Schema({
     name:{
@@ -8,8 +8,12 @@ const PersonSchema = mongoose.Schema({
     imageUrl: {
         type: String,
         required: true
+    },
+    createAt:{
+        type: Date,
+        default: Date.now
     }
 });
 
 
-export default mongoose.model('person',PersonSchema);
+module.exports =  mongoose.model('person',PersonSchema);

@@ -1,11 +1,11 @@
-import personModel from '../models/personModel';
+const personModel = require('../models/personModel');
 
 
 // add new person to tinder cards
 let addPerson = (req,res) => {
     let personData = req.body;
     personModel.create(personData, (err, data)=>{
-        if(err) throw res.status(500).json(err);
+        if(err) throw res.status(500).json({err});
         res.status(201).json({data})
     });
 }
@@ -16,10 +16,10 @@ let addPerson = (req,res) => {
 let fetchPerson = (req,res) =>{
     personModel.find((err, data)=>{
         if(err) throw res.status(500).json(err);
-        res.status(201).json({data})
+        res.status(201).json(data)
     })
 }
 
 
-export default {addPerson, fetchPerson};
+module.exports = {addPerson, fetchPerson};
 
